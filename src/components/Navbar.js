@@ -1,18 +1,38 @@
-import React from 'react'
+import React, { useState } from 'react';
+import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 
 const Navbar = () => {
+
+    const [nav, setNav] = useState(true);
+    const [navItems, setNavItems] = useState(['home', 'company', 'resources', 'about', 'contact']);
+    const handleNav = () => setNav(!nav);
+
+
     return (
 
-        <div className='flex justify-between items-center mx-auto text-white border-2 border-green-900 '>
-            <h1 className='w-screen text-3xl font-bold text-[#338333] border-2 border-red-900'>REACT.</h1>
+        <div className='flex justify-between items-center max-w-[1240px] mx-auto text-white  px-4'>
 
-            <ul className='flex'>
-                <li className="p-4">Home</li>
-                <li className="p-4">Company</li>
-                <li className="p-4">Resources</li>
-                <li className="p-4">About</li>
-                <li className="p-4">Contacts</li>
+            <h1 className='md:text-3xl w-screen text-2xl font-bold text-[#338333] '>REACT.</h1>
+
+            <ul className='hidden md:flex uppercase font-bold'>
+                {navItems.map(item => <li className='p-4' key={Math.random()}>{item}</li>)}
             </ul>
+
+
+            <div onClick={handleNav} className='block md:hidden'>
+                {!nav ? <AiOutlineClose size={24} /> : <AiOutlineMenu size={24} />}
+            </div>
+
+
+
+            <div className={!nav ? 'fixed left-0 top-0 w-[40%] h-full border-r border-r-gray-900 ease-in-out duration-300' : 'fixed left-[-100%]'}>
+
+                <ul className='pt-[8vh] uppercase font-bold'>
+                    {navItems.map(item => <li className='p-4' key={Math.random()}>{item}</li>)}
+                </ul>
+
+            </div>
+
 
         </div>
     )
