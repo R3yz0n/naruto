@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
+import AnimatedButton from '../UI/AnimatedButton';
 
 const Navbar = () => {
 
@@ -15,20 +16,20 @@ const Navbar = () => {
             <h1 className='md:text-3xl w-screen text-2xl font-bold text-[#338333] '>REACT.</h1>
 
             <ul className='hidden md:flex uppercase font-bold'>
-                {navItems.map(item => <li className='p-4' key={Math.random()}>{item}</li>)}
+                {navItems.map(item => <AnimatedButton className='flex p-3 ease-linear' key={Math.random()}>{item}</AnimatedButton>)}
             </ul>
 
 
-            <div onClick={handleNav} className='block md:hidden'>
+            <div onClick={handleNav} className='block md:hidden pt-2'>
                 {!nav ? <AiOutlineClose size={24} /> : <AiOutlineMenu size={24} />}
             </div>
 
 
 
-            <div className={!nav ? 'fixed left-0 top-0 w-[40%] h-full border-r border-r-gray-900 ease-in-out duration-300' : 'fixed left-[-100%]'}>
+            <div className={!nav ? 'fixed left-0 top-0 w-[40%] h-full border-r border-r-gray-900 bg-[#000000e3] ease-in-out duration-300' : 'fixed left-[-100%]'}>
 
                 <ul className='pt-[8vh] uppercase font-bold'>
-                    {navItems.map(item => <li className='p-4' key={Math.random()}>{item}</li>)}
+                    {navItems.map(item => <AnimatedButton className='flex p-3 ease-linear' key={Math.random()}>{item}</AnimatedButton>)}
                 </ul>
 
             </div>

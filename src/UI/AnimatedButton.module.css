@@ -1,0 +1,49 @@
+li {
+    list-style: none;
+    font-weight: bold;
+
+}
+
+li a {
+    text-decoration: none;
+    padding: 0.1rem 0.3rem;
+    position: relative;
+
+
+}
+
+li a::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: -4px;
+    left: -4px;
+}
+
+li a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 0%;
+    bottom: -4px;
+    right: -4px;
+
+}
+
+li a:hover::before {
+    height: 105%;
+    width: 115%;
+    border-top: 2px solid wheat;
+    border-left: 2px solid wheat;
+    transition: 1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+li a:hover::after {
+    height: 105%;
+    width: 115%;
+    border-right: 2px solid wheat;
+    border-bottom: 2px solid wheat;
+
+    transition: 1s ease-out;
+}
