@@ -11,9 +11,9 @@ const Navbar = () => {
 
     return (
 
-        <div className='flex justify-between items-center max-w-[1240px] mx-auto text-white  px-4 '>
+        <div className='flex justify-between items-center max-w-[1240px] mx-auto text-white  px-4 pt-4 '>
 
-            <h1 className='md:text-3xl w-[80vh] text-2xl font-bold text-[#00df9a] '>REACT.</h1>
+            <h1 className='md:text-3xl w-[80vh] text-2xl font-bold text-[#00df9a] '>ANIME~io</h1>
 
             <ul className='hidden md:flex uppercase font-bold'>
                 {navItems.map(item => <AnimatedButton className='flex p-3 ease-linear' key={Math.random()}>{item}</AnimatedButton>)}
