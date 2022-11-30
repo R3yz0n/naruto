@@ -9,7 +9,7 @@ const AboutNaruto = () => {
 
 
     return (
-        <section className=' bg-white py-10  px-4 '>
+        <section className=' bg-white py-10  px-4 ' id='about'>
 
             <div className="max-w-[1240px] mx-auto grid md:grid-cols-2 overflow-hidden">
                 <img className='w-[500px] mx-auto my-4 animate-bounce' src={Naruto} alt="Error" />

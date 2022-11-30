@@ -1,6 +1,6 @@
 import Form from './Form'
 
-const NewsLetter = () => {
+const EmailEntry = () => {
 
     const getFormData = (formData) => {
         alert('Your email is : ' + formData.email)
@@ -14,7 +14,7 @@ const NewsLetter = () => {
 
     return (
 
-        <section className='w-full py-16 text-white px-4'>
+        <section className='w-full py-16 text-white px-4' >
             <div className='max-w-[1240px] mx-auto grid lg:grid-cols-3'>
 
                 <div className='lg:col-span-2'>
@@ -39,4 +39,4 @@ const NewsLetter = () => {
     )
 }
 
-export default NewsLetter
+export default EmailEntry

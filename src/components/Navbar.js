@@ -5,18 +5,18 @@ import AnimatedButton from '../UI/AnimatedButton';
 const Navbar = () => {
 
     const [nav, setNav] = useState(true);
-    const [navItems, setNavItems] = useState(['home', 'company', 'resources', 'about', 'contact']);
+    const navItems = [{ title: 'home' }, { title: 'company' }, { title: 'resources' }, { title: 'about' }, { title: 'contact' }];
     const handleNav = () => setNav(!nav);
 
 
     return (
 
-        <div className='flex justify-between items-center max-w-[1240px] mx-auto text-white  px-4 pt-4 '>
+        <div className='flex justify-between items-center max-w-[1240px] mx-auto text-white  px-4 '>
 
-            <h1 className='md:text-3xl w-[80vh] text-2xl font-bold text-[#00df9a] '>ANIME~io</h1>
+            <h1 className='md:text-[2.3rem] w-[80vh] text-2xl font-bold text-[#00df9a] '>ANIME~Io</h1>
 
-            <ul className='hidden md:flex uppercase font-bold'>
-                {navItems.map(item => <AnimatedButton className='flex p-3 ease-linear' key={Math.random()}>{item}</AnimatedButton>)}
+            <ul className='hidden md:flex uppercase font-bold lg:text-[1.1rem] pt-2'>
+                {navItems.map((item, index) => <AnimatedButton className='flex p-3 ease-linear' key={index}>{item.title}</AnimatedButton>)}
             </ul>
 
 
@@ -30,7 +30,7 @@ const Navbar = () => {
                 'fixed left-0 top-0 w-[40%] h-full pl-2 border-r border-r-gray-900 bg-[#000000e3] ease-in-out duration-300' : 'fixed left-[-100%]'}>
 
                 <ul className='pt-[8vh] uppercase font-bold'>
-                    {navItems.map(item => <AnimatedButton className='flex p-3 ease-linear' key={Math.random()}>{item}</AnimatedButton>)}
+                    {navItems.map((item, index) => <AnimatedButton className='flex p-3 ease-linear' key={index}>{item.title}</AnimatedButton>)}
                 </ul>
 
             </div>

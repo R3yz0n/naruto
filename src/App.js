@@ -1,8 +1,8 @@
 import AboutNaruto from './components/AboutNaruto';
 import Card from './components/Card';
-import Hero from './components/Hero';
+import Quotes from './components/Quotes';
 import Navbar from './components/Navbar';
-import NewsLetter from './components/NewsLetter';
+import EmailEntry from './components/EmailEntry';
 
 function App() {
   return (
@@ -10,12 +10,12 @@ function App() {
 
 
 
-    <div className="scroll-smooth">
+    <div>
 
       <Navbar />
-      <Hero />
+      <Quotes />
       <AboutNaruto />
-      <NewsLetter />
+      <EmailEntry />
       <Card />
 
 

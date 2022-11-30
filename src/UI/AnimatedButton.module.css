@@ -34,16 +34,15 @@ li a::after {
 li a:hover::before {
     height: 105%;
     width: 115%;
-    border-top: 2px solid wheat;
-    border-left: 2px solid wheat;
-    transition: 1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    border-top: 2px solid rgb(228, 164, 46);
+    border-left: 2px solid rgb(228, 164, 46);
+    transition: 0.6s all;
 }
 
 li a:hover::after {
     height: 105%;
     width: 115%;
-    border-right: 2px solid wheat;
-    border-bottom: 2px solid wheat;
-
-    transition: 1s ease-out;
+    border-right: 2px solid rgb(228, 164, 46);
+    border-bottom: 2px solid rgb(228, 164, 46);
+    transition: 0.6s all;
 }

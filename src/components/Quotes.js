@@ -3,7 +3,7 @@ import Button from '../UI/Button';
 
 
 
-const Hero = () => {
+const Quotes = () => {
     return (
         <section className='text-white'>
             <div className='max-w-[900px] mt-[4rem] md:mt-[6rem] w-full min-h-[55vh] sm:min-h-screen mx-auto text-center flex flex-col px-3  py-4  '>
@@ -32,4 +32,4 @@ const Hero = () => {
     )
 }
 
-export default Hero
+export default Quotes
