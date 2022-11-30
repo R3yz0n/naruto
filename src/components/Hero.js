@@ -6,7 +6,7 @@ import Button from '../UI/Button';
 const Hero = () => {
     return (
         <section className='text-white'>
-            <div className='max-w-[900px] mt-[96px] w-full h-screen mx-auto text-center flex flex-col   '>
+            <div className='max-w-[900px] mt-[96px] w-full h-[65vh] sm:h-screen mx-auto text-center flex flex-col   '>
 
                 <p className='text-[#00df9a] font-bold p-2 md:text-2xl sm:text-xl'>GROW WITH DATA ANALYSTICS</p>
                 <h1 className='md:text-7xl sm:text-6xl text-4xl font-bold md:py-6'>Grow with data.</h1>
@@ -24,11 +24,11 @@ const Hero = () => {
 
                 </div>
 
-                <Button className='text-[1.5rem] py-1 px-6 text-[#000] bg-[#00df9a]'>Get Started</Button>
-
+                <Button className='text-[1.7rem]  px-6'>Get Started</Button>
             </div>
-
         </section>
+
+
     )
 }
 

@@ -11,9 +11,9 @@ const Navbar = () => {
 
     return (
 
-        <div className='flex justify-between items-center max-w-[1240px] mx-auto text-white  px-4'>
+        <div className='flex justify-between items-center max-w-[1240px] mx-auto text-white  px-4 '>
 
-            <h1 className='md:text-3xl w-screen text-2xl font-bold text-[#338333] '>REACT.</h1>
+            <h1 className='md:text-3xl w-[80vh] text-2xl font-bold text-[#00df9a] '>REACT.</h1>
 
             <ul className='hidden md:flex uppercase font-bold'>
                 {navItems.map(item => <AnimatedButton className='flex p-3 ease-linear' key={Math.random()}>{item}</AnimatedButton>)}
@@ -25,8 +25,9 @@ const Navbar = () => {
             </div>
 
 
-
-            <div className={!nav ? 'fixed left-0 top-0 w-[40%] h-full border-r border-r-gray-900 bg-[#000000e3] ease-in-out duration-300' : 'fixed left-[-100%]'}>
+            {/* side nav bar */}
+            <div className={!nav ?
+                'fixed left-0 top-0 w-[40%] h-full pl-2 border-r border-r-gray-900 bg-[#000000e3] ease-in-out duration-300' : 'fixed left-[-100%]'}>
 
                 <ul className='pt-[8vh] uppercase font-bold'>
                     {navItems.map(item => <AnimatedButton className='flex p-3 ease-linear' key={Math.random()}>{item}</AnimatedButton>)}

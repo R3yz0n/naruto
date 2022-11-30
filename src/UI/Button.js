@@ -2,8 +2,8 @@ import React from 'react'
 
 const Button = (p) => {
     return (
-        <button className={`bg-blue-500 text-white font-medium  border-black hover:bg-blue-400 hover:border-1 hover:border-black 
-    px-2 mt-1 rounded mx-auto shadow-gray-900 shadow-md  cursor-pointer ${p.className} `}>{p.children}</button>
+        <button className={` px-5 py-1  mx-auto  rounded-md bg-[#00df9a] hover:bg-[#3bffc1]
+         text-black ${p.className}`} onClick={p.onClick}>{p.children}</button>
     )
 }
 

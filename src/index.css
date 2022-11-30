@@ -6,3 +6,7 @@ body {
     background-color: #000300;
     /* overflow: hidden; */
 }
+
+/* layer base {
+    @apply button {}
+} */
