@@ -24,7 +24,7 @@ const Quotes = () => {
 
                 </div>
 
-                <Button className='text-[1.7rem]  px-6'>Get Started</Button>
+                <Button className='text-[1.3rem] md:text-[1.7rem] font-[700] px-6'>Get Started</Button>
             </div>
         </section>
 

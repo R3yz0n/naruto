@@ -14,7 +14,7 @@ const EmailEntry = () => {
 
     return (
 
-        <section className='w-full py-16 text-white px-4' >
+        <section className='w-full py-16 text-white px-4' id='contact'>
             <div className='max-w-[1240px] mx-auto grid lg:grid-cols-3'>
 
                 <div className='lg:col-span-2'>

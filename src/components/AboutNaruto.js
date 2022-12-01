@@ -12,7 +12,7 @@ const AboutNaruto = () => {
         <section className=' bg-white py-10  px-4 ' id='about'>
 
             <div className="max-w-[1240px] mx-auto grid md:grid-cols-2 overflow-hidden">
-                <img className='w-[500px] mx-auto my-4 animate-bounce' src={Naruto} alt="Error" />
+                <img className='w-[500px] mx-auto my-4 animate-bounce cursor-grab' src={Naruto} alt="Error" />
 
                 <article className='flex flex-col justify-center'>
                     <p className='text-[#2a44ed] font-bold text-xl md:text-2xl  '>NARUTO STORY ARC ORIGINS</p>

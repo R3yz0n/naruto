@@ -5,13 +5,13 @@ import AnimatedButton from '../UI/AnimatedButton';
 const Navbar = () => {
 
     const [nav, setNav] = useState(true);
-    const navItems = [{ title: 'home' }, { title: 'company' }, { title: 'resources' }, { title: 'about' }, { title: 'contact' }];
+    const navItems = [{ title: 'home' }, { title: 'team' }, { title: 'apply' }, { title: 'about' }, { title: 'contact' }];
     const handleNav = () => setNav(!nav);
 
 
     return (
 
-        <div className='flex justify-between items-center max-w-[1240px] mx-auto text-white  px-4 '>
+        <div className='flex justify-between items-center max-w-[1240px] mx-auto text-white  px-4 pt-4 md:pt-0 '>
 
             <h1 className='md:text-[2.3rem] w-[80vh] text-2xl font-bold text-[#00df9a] '>ANIME~Io</h1>
 
