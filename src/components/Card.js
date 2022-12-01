@@ -27,7 +27,7 @@ const Card = () => {
                     <h2 className='text-2xl font-bold text-center py-5 border-b-[1px] border-[#c8c0c0]'>Double User</h2>
                     <p className='text-3xl font-bold text-center py-3  border-b-[1px] border-[#c8c0c0]'>$399</p>
                     <p className='text-xl font-bold text-center py-3  border-b-[1px] border-[#c8c0c0]'>Chunin Course</p>
-                    <Button className='bg-[#000000] font-bold  mt-4 text-[#fffbfb!important] hover:bg-[#1e1e1e] text-xl'>Start Trail</Button>
+                    <Button className='bg-[#000000!important] font-bold  mt-4 text-[#fffbfb!important] hover:bg-[#1e1e1e] text-xl'>Start Trail</Button>
 
                 </aside>
 
